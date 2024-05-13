@@ -1,73 +1,73 @@
-[vaul-drawer] {
+[react-drawer] {
   touch-action: none;
   will-change: transform;
   transition: transform 0.5s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
-[vaul-drawer][vaul-drawer-direction='bottom'] {
+[react-drawer][react-drawer-direction='bottom'] {
   transform: translate3d(0, 100%, 0);
 }
 
-[vaul-drawer][vaul-drawer-direction='top'] {
+[react-drawer][react-drawer-direction='top'] {
   transform: translate3d(0, -100%, 0);
 }
 
-[vaul-drawer][vaul-drawer-direction='left'] {
+[react-drawer][react-drawer-direction='left'] {
   transform: translate3d(-100%, 0, 0);
 }
 
-[vaul-drawer][vaul-drawer-direction='right'] {
+[react-drawer][react-drawer-direction='right'] {
   transform: translate3d(100%, 0, 0);
 }
 
-.vaul-dragging .vaul-scrollable [vault-drawer-direction='top'] {
+.react-dragging .react-scrollable [react-drawer-direction='top'] {
   overflow-y: hidden !important;
 }
-.vaul-dragging .vaul-scrollable [vault-drawer-direction='bottom'] {
+.react-dragging .react-scrollable [react-drawer-direction='bottom'] {
   overflow-y: hidden !important;
 }
 
-.vaul-dragging .vaul-scrollable [vault-drawer-direction='left'] {
+.react-dragging .react-scrollable [react-drawer-direction='left'] {
   overflow-x: hidden !important;
 }
 
-.vaul-dragging .vaul-scrollable [vault-drawer-direction='right'] {
+.react-dragging .react-scrollable [react-drawer-direction='right'] {
   overflow-x: hidden !important;
 }
 
-[vaul-drawer][vaul-drawer-visible='true'][vaul-drawer-direction='top'] {
+[react-drawer][react-drawer-visible='true'][react-drawer-direction='top'] {
   transform: translate3d(0, var(--snap-point-height, 0), 0);
 }
 
-[vaul-drawer][vaul-drawer-visible='true'][vaul-drawer-direction='bottom'] {
+[react-drawer][react-drawer-visible='true'][react-drawer-direction='bottom'] {
   transform: translate3d(0, var(--snap-point-height, 0), 0);
 }
 
-[vaul-drawer][vaul-drawer-visible='true'][vaul-drawer-direction='left'] {
+[react-drawer][react-drawer-visible='true'][react-drawer-direction='left'] {
   transform: translate3d(var(--snap-point-height, 0), 0, 0);
 }
 
-[vaul-drawer][vaul-drawer-visible='true'][vaul-drawer-direction='right'] {
+[react-drawer][react-drawer-visible='true'][react-drawer-direction='right'] {
   transform: translate3d(var(--snap-point-height, 0), 0, 0);
 }
 
-[vaul-overlay] {
+[react-overlay] {
   opacity: 0;
   transition: opacity 0.5s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
-[vaul-overlay][vaul-drawer-visible='true'] {
+[react-overlay][react-drawer-visible='true'] {
   opacity: 1;
 }
 
-[vaul-drawer]::after {
+[react-drawer]::after {
   content: '';
   position: absolute;
   background: inherit;
   background-color: inherit;
 }
 
-[vaul-drawer][vaul-drawer-direction='top']::after {
+[react-drawer][react-drawer-direction='top']::after {
   top: initial;
   bottom: 100%;
   left: 0;
@@ -75,7 +75,7 @@
   height: 200%;
 }
 
-[vaul-drawer][vaul-drawer-direction='bottom']::after {
+[react-drawer][react-drawer-direction='bottom']::after {
   top: 100%;
   bottom: initial;
   left: 0;
@@ -83,7 +83,7 @@
   height: 200%;
 }
 
-[vaul-drawer][vaul-drawer-direction='left']::after {
+[react-drawer][react-drawer-direction='left']::after {
   left: initial;
   right: 100%;
   top: 0;
@@ -91,7 +91,7 @@
   width: 200%;
 }
 
-[vaul-drawer][vaul-drawer-direction='right']::after {
+[react-drawer][react-drawer-direction='right']::after {
   left: 100%;
   right: initial;
   top: 0;
@@ -99,7 +99,7 @@
   width: 200%;
 }
 
-[vaul-handle] {
+[react-handle] {
   display: block;
   position: relative;
   opacity: 0.8;
@@ -112,16 +112,16 @@
   cursor: grab;
 }
 
-[vaul-handle]:hover,
-[vaul-handle]:active {
+[react-handle]:hover,
+[react-handle]:active {
   opacity: 1;
 }
 
-[vaul-handle]:active {
+[react-handle]:active {
   cursor: grabbing;
 }
 
-[vaul-handle-hitarea] {
+[react-handle-hitarea] {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -131,11 +131,11 @@
   touch-action: inherit;
 }
 
-[vaul-overlay][vaul-snap-points='true']:not([vaul-snap-points-overlay='true']):not([data-state='closed']) {
+[react-overlay][react-snap-points='true']:not([react-snap-points-overlay='true']):not([data-state='closed']) {
   opacity: 0;
 }
 
-[vaul-overlay][vaul-snap-points-overlay='true']:not([vaul-drawer-visible='false']) {
+[react-overlay][react-snap-points-overlay='true']:not([react-drawer-visible='false']) {
   opacity: 1;
 }
 
@@ -148,13 +148,13 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-  [vaul-drawer] {
+  [react-drawer] {
     user-select: none;
   }
 }
 
 @media (pointer: fine) {
-  [vaul-handle-hitarea]: {
+  [react-handle-hitarea]: {
     width: 100%;
     height: 100%;
   }

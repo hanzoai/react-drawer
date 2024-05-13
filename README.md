@@ -1,19 +1,19 @@
-https://github.com/emilkowalski/vaul/assets/36730035/fdf8c5e8-ade8-433b-8bb0-4ce10e722516
+https://github.com/hanzoai/react-drawer/assets/36730035/fdf8c5e8-ade8-433b-8bb0-4ce10e722516
 
-Vaul is an unstyled drawer component for React that can be used as a Dialog replacement on tablet and mobile devices. You can read about why and how it was built [here](https://emilkowal.ski/ui/building-a-drawer-component).
+React Drawer is an unstyled drawer component for React that can be used as a Dialog replacement on tablet and mobile devices. You can read about why and how it was built [here](https://emilkowal.ski/ui/building-a-drawer-component).
 
 ## Usage
 
 To start using the library, install it in your project:,
 
 ```bash
-npm install vaul
+npm install @hanzo/react-drawer
 ```
 
 Use the drawer in your app.
 
 ```jsx
-import { Drawer } from 'vaul';
+import { Drawer } from '@hanzo/react-drawer';
 
 function MyComponent() {
   return (
@@ -48,7 +48,7 @@ Play around with the examples on codesandbox:
 
 ### Root
 
-Contains all parts of a dialog. Use `shouldScaleBackground` to enable background scaling, it requires an element with `[vaul-drawer-wrapper]` data attribute to scale its background.
+Contains all parts of a dialog. Use `shouldScaleBackground` to enable background scaling, it requires an element with `[react-drawer-wrapper]` data attribute to scale its background.
 Can be controlled with the `value` and `onOpenChange` props. Can be opened by default via the `open` prop.
 
 Additional props:
@@ -71,11 +71,11 @@ Additional props:
 
 `disablePreventScroll`: When `true` scroll prevention mechanism will be disabled. Scroll prevention ensures that page will not scroll on mobile when opening drawer. However this mechanism gets confused when drawer has an input with autofocus and therefore opens simulataneosly with touch keyboard. Defaults to `true`. `modal` set to `false` also disables it.
 
-`noBodyStyles`: When `true` the `body` doesn't get any styles assigned from Vaul.
+`noBodyStyles`: When `true` the `body` doesn't get any styles assigned from React Drawer.
 
 `setBackgroundColorOnScale`: When `false` we don't change body's background color when the drawer is open. `true` by default.
 
-`[data-vaul-no-drag]`: When interacting with an element with this data attribute, the drawer won't be dragged.
+`[data-react-no-drag]`: When interacting with an element with this data attribute, the drawer won't be dragged.
 
 ### Trigger
 
@@ -103,7 +103,7 @@ The button that closes the dialog. [Props](https://www.radix-ui.com/docs/primiti
 
 ### Handle
 
-A drag hint (also known as grabber). Shows people that they can drag the drawer to resize it; they can also tap it to cycle through the snap points, and double tap quickly to close the drawer. Set `preventCycle={true}` to stop this behavior. If you want to change the handle's hit area you can do so by styling the `[vaul-handle-hitarea]` selector (Defaults to 44x44 on mobile devices).
+A drag hint (also known as grabber). Shows people that they can drag the drawer to resize it; they can also tap it to cycle through the snap points, and double tap quickly to close the drawer. Set `preventCycle={true}` to stop this behavior. If you want to change the handle's hit area you can do so by styling the `[react-handle-hitarea]` selector (Defaults to 44x44 on mobile devices).
 
 ### Portal
 

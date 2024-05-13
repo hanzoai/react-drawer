@@ -1,10 +1,10 @@
 'use client';
 
-import { Drawer } from 'vaul';
+import { Drawer } from '@hanzo/react-drawer';
 
 export default function Page() {
   return (
-    <div className="w-screen h-screen bg-white p-8 flex justify-center items-center" vaul-drawer-wrapper="">
+    <div className="w-screen h-screen bg-white p-8 flex justify-center items-center" react-drawer-wrapper="">
       <Drawer.Root>
         <Drawer.Trigger asChild>
           <button>Open Drawer</button>

@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --vaul-overlay-background: 255, 255, 255;
-  --vaul-overlay-background-start: rgba(0, 0, 0, 0);
-  --vaul-overlay-background-end: rgba(0, 0, 0, 0.4);
+  --react-overlay-background: 255, 255, 255;
+  --react-overlay-background-start: rgba(0, 0, 0, 0);
+  --react-overlay-background-end: rgba(0, 0, 0, 0.4);
 }
 
 html,

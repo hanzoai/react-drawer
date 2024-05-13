@@ -1,6 +1,6 @@
 {
-  "name": "vaul",
-  "version": "0.9.1",
+  "name": "@hanzo/react-drawer",
+  "version": "0.9.2",
   "description": "Drawer component for React.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -33,15 +33,15 @@
     "dialog",
     "modal"
   ],
-  "author": "Emil Kowalski <e@emilkowal.ski>",
+  "author": "Hanzo, Inc <dev@hanzo.ai>",
   "license": "MIT",
-  "homepage": "https://vaul.emilkowal.ski/",
+  "homepage": "https://ui.hanzo.ai/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/emilkowalski/vaul.git"
+    "url": "https://github.com/hanzoai/react-drawer.git"
   },
   "bugs": {
-    "url": "https://github.com/emilkowalski/vaul/issues"
+    "url": "https://github.com/hanzoai/react-drawer/issues"
   },
   "devDependencies": {
     "@playwright/test": "^1.37.1",

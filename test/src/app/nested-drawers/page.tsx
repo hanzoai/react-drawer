@@ -1,10 +1,10 @@
 'use client';
 
-import { Drawer } from 'vaul';
+import { Drawer } from '@hanzo/react-drawer';
 
 export default function Page() {
   return (
-    <div className="w-screen h-screen bg-white p-8 flex justify-center items-center" vaul-drawer-wrapper="">
+    <div className="w-screen h-screen bg-white p-8 flex justify-center items-center" react-drawer-wrapper="">
       <Drawer.Root shouldScaleBackground>
         <Drawer.Trigger asChild>
           <button data-testid="trigger">Open Drawer</button>
@@ -66,7 +66,7 @@ export default function Page() {
                           <p className="text-gray-600 mb-2">
                             You can view more examples{' '}
                             <a
-                              href="https://github.com/emilkowalski/vaul#examples"
+                              href="https://github.com/hanzoai/react-drawer#examples"
                               className="underline"
                               target="_blank"
                             >
@@ -80,7 +80,7 @@ export default function Page() {
                         <div className="flex gap-6 justify-end max-w-md mx-auto">
                           <a
                             className="text-xs text-gray-600 flex items-center gap-0.25"
-                            href="https://github.com/emilkowalski/vaul"
+                            href="https://github.com/hanzoai/react-drawer"
                             target="_blank"
                           >
                             GitHub
@@ -135,7 +135,7 @@ export default function Page() {
               <div className="flex gap-6 justify-end max-w-md mx-auto">
                 <a
                   className="text-xs text-gray-600 flex items-center gap-0.25"
-                  href="https://github.com/emilkowalski/vaul"
+                  href="https://github.com/hanzoai/react-drawer"
                   target="_blank"
                 >
                   GitHub
