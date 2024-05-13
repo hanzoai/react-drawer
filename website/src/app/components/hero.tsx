@@ -1,6 +1,6 @@
 'use client';
 
-import { Drawer } from 'vaul';
+import { Drawer } from '@hanzo/react-drawer';
 
 export function Hero() {
   return (
@@ -36,7 +36,7 @@ export function Hero() {
       </svg>
       <div className="max-w-2xl mx-auto text-center pt-64">
         <div className="flex flex-col relative">
-          <h1 className="text-7xl font-semibold mb-4 relative">Vaul</h1>
+          <h1 className="text-7xl font-semibold mb-4 relative">React Drawer</h1>
           <p className="text-gray-600 text-xl">Drawer component for React.</p>
         </div>
         <div className="flex gap-4 justify-center mt-6">
@@ -99,7 +99,7 @@ export function Hero() {
                   <div className="flex gap-6 justify-end max-w-md mx-auto">
                     <a
                       className="text-xs text-gray-600 flex items-center gap-0.25"
-                      href="https://github.com/emilkowalski/vaul"
+                      href="https://github.com/hanzoai/react-drawer"
                       target="_blank"
                     >
                       GitHub
@@ -149,7 +149,7 @@ export function Hero() {
             </Drawer.Portal>
           </Drawer.Root>
           <a
-            href="https://github.com/emilkowalski/vaul"
+            href="https://github.com/hanzoai/react-drawer"
             className="font-medium text-sm px-4 py-2.5 hover:bg-gray-100 rounded-full"
             target="_blank"
           >

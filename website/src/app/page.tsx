@@ -2,18 +2,18 @@ import { Hero } from './components/hero';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Vaul',
+  title: 'React Drawer',
   description: 'Drawer component for React.',
   openGraph: {
-    title: 'Vaul',
+    title: 'React Drawer',
     description: 'Drawer component for React.',
-    url: 'https://vaul.emilkowal.ski',
-    siteName: 'Emil Kowalski',
+    url: 'https://drawer.ui.hanzo.ai',
+    siteName: 'React Drawer',
     locale: 'en-US',
     type: 'website',
   },
   twitter: {
-    title: 'Emil Kowalski',
+    title: 'React Drawer',
     card: 'summary_large_image',
   },
   themeColor: '#000000',

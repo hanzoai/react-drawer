@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import clsx from 'clsx';
-import { Drawer } from 'vaul';
-import { DrawerDirection } from 'vaul/src/types';
+import { Drawer } from '@hanzo/react-drawer';
+import { DrawerDirection } from '@hanzo/react-drawer/src/types';
 
 const CenteredContent = () => {
   return (
@@ -68,7 +68,7 @@ export default function Page() {
   return (
     <div
       className="w-screen h-screen bg-white p-8 flex flex-col gap-2 justify-center items-center"
-      vaul-drawer-wrapper=""
+      react-drawer-wrapper=""
     >
       <select
         value={direction}

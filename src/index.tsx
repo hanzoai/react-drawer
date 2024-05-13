@@ -22,7 +22,7 @@ const NESTED_DISPLACEMENT = 16;
 
 const WINDOW_TOP_OFFSET = 26;
 
-const DRAG_CLASS = 'vaul-dragging';
+const DRAG_CLASS = 'react-dragging';
 
 interface WithFadeFromProps {
   snapPoints: (number | string)[];
@@ -169,7 +169,7 @@ function Root({
     const swipeAmount = drawerRef.current ? getTranslate(drawerRef.current, direction) : null;
     const date = new Date();
 
-    if (element.hasAttribute('data-vaul-no-drag') || element.closest('[data-vaul-no-drag]')) {
+    if (element.hasAttribute('data-react-no-drag') || element.closest('[data-react-no-drag]')) {
       return false;
     }
 
@@ -253,7 +253,7 @@ function Root({
 
       // We need to capture last time when drag with scroll was triggered and have a timeout between
       const absDraggedDistance = Math.abs(draggedDistance);
-      const wrapper = document.querySelector('[vaul-drawer-wrapper]');
+      const wrapper = document.querySelector('[react-drawer-wrapper]');
 
       // Calculate the percentage dragged, where 1 is the closed position
       let percentageDragged = absDraggedDistance / drawerHeightRef.current;
@@ -475,7 +475,7 @@ function Root({
 
   function resetDrawer() {
     if (!drawerRef.current) return;
-    const wrapper = document.querySelector('[vaul-drawer-wrapper]');
+    const wrapper = document.querySelector('[react-drawer-wrapper]');
     const currentSwipeAmount = getTranslate(drawerRef.current, direction);
 
     set(drawerRef.current, {
@@ -604,14 +604,14 @@ function Root({
       children?.forEach((child: Element) => {
         const htmlChild = child as HTMLElement;
         if (htmlChild.scrollHeight > htmlChild.clientHeight || htmlChild.scrollWidth > htmlChild.clientWidth) {
-          htmlChild.classList.add('vaul-scrollable');
+          htmlChild.classList.add('react-scrollable');
         }
       });
     }
   }, [visible]);
 
   function scaleBackground(open: boolean) {
-    const wrapper = document.querySelector('[vaul-drawer-wrapper]');
+    const wrapper = document.querySelector('[react-drawer-wrapper]');
 
     if (!wrapper || !shouldScaleBackground) return;
 
@@ -866,13 +866,13 @@ const Handle = React.forwardRef<HTMLDivElement, HandleProps>(function (
       }}
       // onPointerUp is already handled by the content component
       ref={ref}
-      vaul-drawer-visible={visible ? 'true' : 'false'}
-      vaul-handle=""
+      react-drawer-visible={visible ? 'true' : 'false'}
+      react-handle=""
       aria-hidden="true"
       {...rest}
     >
       {/* Expand handle's hit area beyond what's visible to ensure a 44x44 tap target for touch devices */}
-      <span vaul-handle-hitarea="" aria-hidden="true">
+      <span react-handle-hitarea="" aria-hidden="true">
         {children}
       </span>
     </div>
@@ -891,10 +891,10 @@ const Overlay = React.forwardRef<HTMLDivElement, React.ComponentPropsWithoutRef<
       <DialogPrimitive.Overlay
         onMouseUp={onRelease}
         ref={composedRef}
-        vaul-drawer-visible={visible ? 'true' : 'false'}
-        vaul-overlay=""
-        vaul-snap-points={isOpen && hasSnapPoints ? 'true' : 'false'}
-        vaul-snap-points-overlay={isOpen && shouldFade ? 'true' : 'false'}
+        react-drawer-visible={visible ? 'true' : 'false'}
+        react-overlay=""
+        react-snap-points={isOpen && hasSnapPoints ? 'true' : 'false'}
+        react-snap-points-overlay={isOpen && shouldFade ? 'true' : 'false'}
         {...rest}
       />
     );
@@ -963,9 +963,9 @@ const Content = React.forwardRef<HTMLDivElement, ContentProps>(function (
 
   return (
     <DialogPrimitive.Content
-      vaul-drawer=""
-      vaul-drawer-direction={direction}
-      vaul-drawer-visible={visible ? 'true' : 'false'}
+      react-drawer=""
+      react-drawer-direction={direction}
+      react-drawer-visible={visible ? 'true' : 'false'}
       {...rest}
       ref={composedRef}
       style={

@@ -1,14 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import { Drawer } from 'vaul';
+import { Drawer } from '@hanzo/react-drawer';
 
 export default function Page() {
   const [open, setOpen] = useState(false);
   const [fullyControlled, setFullyControlled] = useState(false);
 
   return (
-    <div className="w-screen h-screen bg-white p-8 flex justify-center items-center" vaul-drawer-wrapper="">
+    <div className="w-screen h-screen bg-white p-8 flex justify-center items-center" react-drawer-wrapper="">
       <Drawer.Root open={open}>
         <Drawer.Trigger asChild onClick={() => setOpen(true)}>
           <button data-testid="trigger" className="text-2xl">
@@ -56,7 +56,7 @@ export default function Page() {
               <div className="flex gap-6 justify-end max-w-md mx-auto">
                 <a
                   className="text-xs text-zinc-600 flex items-center gap-0.25"
-                  href="https://github.com/emilkowalski/vaul"
+                  href="https://github.com/hanzoai/react-drawer"
                   target="_blank"
                 >
                   GitHub
@@ -152,7 +152,7 @@ export default function Page() {
               <div className="flex gap-6 justify-end max-w-md mx-auto">
                 <a
                   className="text-xs text-zinc-600 flex items-center gap-0.25"
-                  href="https://github.com/emilkowalski/vaul"
+                  href="https://github.com/hanzoai/react-drawer"
                   target="_blank"
                 >
                   GitHub

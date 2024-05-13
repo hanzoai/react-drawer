@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react'
-import { Drawer } from 'vaul'
+import { Drawer } from '@hanzo/react-drawer'
 
 export function Hero() {
 
@@ -40,7 +40,7 @@ export function Hero() {
       </svg>
       <div className='max-w-2xl mx-auto text-center pt-50'>
         <div className='flex flex-col relative'>
-          <h1 className='text-7xl font-semibold mb-4 relative'>Vaul</h1>
+          <h1 className='text-7xl font-semibold mb-4 relative'>React Drawer</h1>
           <p className='text-gray-600 text-xl'>Drawer component for React.</p>
         </div>
         <div className='flex gap-4 justify-center mt-6'>
@@ -59,7 +59,7 @@ export function Hero() {
             Does nothing
           </button>
           <a
-            href='https://github.com/emilkowalski/vaul'
+            href='https://github.com/hanzoai/react-drawer'
             className='font-medium text-sm px-4 py-2.5 hover:bg-gray-100 rounded-full'
             target='_blank'
           >
@@ -69,12 +69,12 @@ export function Hero() {
             <Drawer.Portal>
               <Drawer.Overlay className='fixed inset-0 bg-black/40' />
               <Drawer.Content className={
-                'flex flex-col ' + 
-                'bg-gray-100 rounded-t-[10px] ' + 
-                'border border-gray-800 ' + 
-                'mt-24 ' + 
-                'h-[60%] max-h-[96%] ' + 
-                'fixed bottom-0 left-0 right-0 ' + 
+                'flex flex-col ' +
+                'bg-gray-100 rounded-t-[10px] ' +
+                'border border-gray-800 ' +
+                'mt-24 ' +
+                'h-[60%] max-h-[96%] ' +
+                'fixed bottom-0 left-0 right-0 ' +
                 'md:max-w-[550px] md:mx-auto lg:max-w-[50vw]'
               }>
                 <div className='p-4 bg-white rounded-t-[10px] flex-1'>
@@ -87,7 +87,7 @@ export function Hero() {
                       type='button'
                       className={
                         'self-center block my-5 ' +
-                        'border border-gray-800 ' + 
+                        'border border-gray-800 ' +
                         'rounded-full bg-white px-4 py-2.5 text-sm font-medium text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
                       }
                       onClick={() => {setModal(!modal)}}
@@ -138,7 +138,7 @@ export function Hero() {
                   <div className='flex gap-6 justify-end max-w-md mx-auto'>
                     <a
                       className='text-xs text-gray-600 flex items-center gap-0.25'
-                      href='https://github.com/emilkowalski/vaul'
+                      href='https://github.com/hanzoai/react-drawer'
                       target='_blank'
                     >
                       GitHub
@@ -184,7 +184,7 @@ export function Hero() {
                     </a>
                   </div>
                 </div>
-                
+
 
               </Drawer.Content>
             </Drawer.Portal>

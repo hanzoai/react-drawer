@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Vaul',
-    short_name: 'Vaul',
-    description: 'Vaul',
+    name: 'React Drawer',
+    short_name: 'React Drawer',
+    description: 'React Drawer',
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',
