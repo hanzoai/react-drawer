@@ -1,6 +1,6 @@
 {
   "name": "@hanzo/react-drawer",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "Drawer component for React.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -33,7 +33,7 @@
     "dialog",
     "modal"
   ],
-  "author": "Hanzo, Inc <dev@hanzo.ai>",
+  "author": "Hanzo Industries Inc <dev@hanzo.ai>",
   "license": "MIT",
   "homepage": "https://ui.hanzo.ai/",
   "repository": {
