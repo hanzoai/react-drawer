@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/hero.svg" alt="react-drawer" width="880"></p>
+
 https://github.com/hanzoai/react-drawer/assets/36730035/fdf8c5e8-ade8-433b-8bb0-4ce10e722516
 
 React Drawer is an unstyled drawer component for React that can be used as a Dialog replacement on tablet and mobile devices. You can read about why and how it was built [here](https://emilkowal.ski/ui/building-a-drawer-component).
