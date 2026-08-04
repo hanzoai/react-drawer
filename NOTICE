@@ -1,0 +1,13 @@
+Hanzo React Drawer
+Copyright (c) 2024-2026 Hanzo AI, Inc.
+
+This product is a fork of Vault (vaul), an unstyled drawer component for React.
+
+  Project:   vaul
+  Source:    https://github.com/emilkowalski/vaul
+  License:   MIT (SPDX: MIT)
+  Copyright: Copyright (c) 2023 Emil Kowalski
+
+The upstream MIT license terms are retained verbatim in LICENSE.md. Hanzo's
+copyright covers only Hanzo's own changes; Emil Kowalski retains his rights in
+the work this was derived from.
