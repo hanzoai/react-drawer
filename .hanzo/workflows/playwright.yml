@@ -11,13 +11,16 @@ jobs:
     runs-on: hanzo-build-linux-amd64
     steps:
       - uses: actions/checkout@v4
+      # Pinned to 16 because the tree is pinned: pnpm-lock.yaml is
+      # lockfileVersion 5.3, which only pnpm 6 reads, and pnpm 6's fetcher
+      # fails every tarball GET against pkg.hanzo.ai on newer Node
+      # (ERR_INVALID_THIS). Moving off 16 means regenerating the lockfile on a
+      # current pnpm, which is a dependency change, not a CI one.
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-      # No pinned pnpm version here. The workflow used to install pnpm@5.3 while
-      # package.json declares pnpm@6.32.11, so the lockfile was being resolved by
-      # a major it was not written for. action-setup with no `version` reads the
-      # packageManager field, which keeps the version in one place.
+          node-version: 16
+      # No pinned pnpm version: action-setup reads packageManager (6.32.11).
+      # The old job installed pnpm@5.3 against a lockfile written for 6.
       - uses: pnpm/action-setup@v4
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
