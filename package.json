@@ -44,25 +44,25 @@
     "url": "https://github.com/hanzoai/react-drawer/issues"
   },
   "devDependencies": {
-    "@playwright/test": "^1.37.1",
-    "@radix-ui/react-dialog": "^1.0.4",
-    "@types/node": "20.5.7",
-    "@types/react": "18.2.55",
-    "@types/react-dom": "18.2.18",
-    "bunchee": "^4.4.6",
-    "eslint": "^7.32.0",
-    "prettier": "^2.5.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "turbo": "1.6",
-    "typescript": "5.2.2"
+    "@playwright/test": "catalog:",
+    "@radix-ui/react-dialog": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "bunchee": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:"
   },
   "peerDependencies": {
-    "react": "^16.8 || ^17.0 || ^18.0",
-    "react-dom": "^16.8 || ^17.0 || ^18.0"
+    "react": ">=19.2.8",
+    "react-dom": ">=19.2.8"
   },
   "packageManager": "pnpm@6.32.11",
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.0.4"
+    "@radix-ui/react-dialog": "catalog:"
   }
 }
