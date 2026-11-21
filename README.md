@@ -6,6 +6,8 @@ React Drawer is an unstyled drawer component for React that can be used as a Dia
 
 ## Usage
 
+[![Open in Hanzo](https://hanzo.app/badges/open-in-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/react-drawer&ref=main&action=open) [![Edit with Hanzo](https://hanzo.app/badges/edit-with-hanzo.svg)](https://hanzo.app/dev/open?repo=github.com/hanzoai/react-drawer&ref=main&action=edit)
+
 To start using the library, install it in your project:,
 
 ```bash
